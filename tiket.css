@@ -1,0 +1,66 @@
+. ticket {
+text - align: center;
+padding: 60px 20px;
+background - color: #f9f9f9;
+}
+
+.ticket - options {
+display: flex;
+justify -content: center;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+
+.ticket-card {
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+padding: 20px;
+width: 280px;
+transition: transform 0.3s ease;
+}
+
+.ticket-card:hover {
+transform:scale(1.03);
+}
+
+.ticket-card img {
+width:80px;
+margin-bottom: 15px;
+}
+
+.ticket-card h3 {
+margin: 10px 0;
+font-size: 1.5em;
+}
+
+.ticket-card p {
+font-weight: bold;
+color: #333;
+}
+
+.ticket-card ul {
+life-style: none;
+padding: 0;
+margin: 15px 0;
+text-align: left;
+}
+
+.ticket-card ul li {
+margin-bottom: 8px;
+postion: relative;
+padding-left: 20px;
+}
+
+.ticket-card ul li ::before {
+content:" ";
+postion: absolute;
+left:0;
+color: green;
+
+.btn-primary,.btn-secondary {
+display: inline-block;
+padding: 10px 20px;
+border-radius: 6px;
+text-decoration: none;
