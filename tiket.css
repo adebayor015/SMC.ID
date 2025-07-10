@@ -9,5 +9,17 @@ display: flex;
 justify -content: center;
 flex-wrap: wrap;
 gap: 30px;
+Margin-top:30px;
+}
+.tiket-card
+ background:#fff;
+ border-radius:12px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ padding:20px;
+ width:280px;
+ transition:transform 0.3s ease;
+}
+.ticket-card:hover{
+  transform:scale(1.03);
 }
 
