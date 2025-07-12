@@ -13,3 +13,36 @@ payment {
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   text-align: center;
 }
+payment h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+payment p {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+payment-from input,
+payment-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+}
+payment-form input:focus,
+payment-form select:focus {
+  outline: 2px solid #dc2626;
+}
+btn-primary {
+  background-color: #dc2626;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
