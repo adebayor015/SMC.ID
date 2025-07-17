@@ -21,6 +21,15 @@ payment p {
   margin-bottom: 30px;
   color: #ccc;
 }
+payment-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+  text-align: left;
+}
+payment-form label{
+  font-weight: bold;
+}
 payment-from input,
 payment-form select {
   padding: 10px;
