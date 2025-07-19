@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="with=device-width, initial-scale=1.0" />
   <title>Pembayaran Tiket - Semarang Music Concert</title>
-</head>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -54,10 +53,11 @@
       margin-top: 20px;
     }
   </style>
+</head>
 
 <body>
   <section class="payment">
-    <h1>Pembayaran Tiket</h1>
+    <h1>Pembayaran Tiket Semarang Music Concert</h1>
     <p>Isi Data Di Bawah Ini Untuk Melanjutkan Pembayaran</p>
 
     <form class="payment-form" action="#" method="post">
@@ -80,12 +80,40 @@
         <option value="OVO"> OVO </option>
       </select>
 
+      <div class="total-harga" id="totalharga">Total: Rp 100.000 </div>
       <button type="submit" class="btn-primary"> Bayar Sekarang </button>
     </form>
 
      <div class="back-link">
-       <a href="...."> </a>
+       <a href="index.html"> Kembali Ke Halaman Utama</a>
      </div>
     </section>
+
+    <script>
+      const hargaPerTiket = 100000;
+      
+      const jumlahInput = document.getElementById('jumlah');
+      const totalHarga = document.getElementById('totalHarga');
+      const form = document.getElementById('paymentForm');
+
+      jumlahInput.addEventListener('input',() => {
+        const jumlah = parseInt(jumlahInput.value) || 1;
+        const total = jumlah * hargaPerTiket;
+        totalHarga.textContent = 'Total: Rp ${total.toLocalString('id-ID')}' ;
+      });
+
+      form.addEventListener('submit',function (e) {
+        e.preventDefault();
+        const nama = document.getElementById('nama').value;
+        const jumlah = perseInt(jumlahInput.value) || 1;
+        const metode = document.getElementById('metode').value;
+
+        if (confirnm('konfirmasi pembayaran atas mama ${nama} sejumlah ${jumlah} tiket dengan metode ${metode}?')) {
+          alert("Pembayaran berhasil! E-tiket akan dikirim ke email Anda.");
+          form.reset();
+          totalHarga.tectContent = "Total : Rp 100.000";
+        }
+        });
+    </script>
 </body>
 </html>
