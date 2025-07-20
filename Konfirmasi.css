@@ -5,7 +5,7 @@ body {
   color: white;
 }
 
-.confirmation {
+confirmation {
   max-width: 600px;
   margin: 80px auto;
   text-align: center;
@@ -14,8 +14,43 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
-.confirmation h1{
+
+confirmation h1{
   font-size: 2.5rem;
   color: #4ade80;
   margin-bottom:10px;
 }
+
+confirmation p {
+  color: #ccc;
+  margin-bottom:20px;
+}
+
+details {
+  text-align: left;
+  background-color: #2a2a2a;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+details p {
+  margin:10px 0;
+  color: white;
+}
+
+btn-primary {
+  background-color: #dc2626;
+  color: white;
+  padding:12px 24px;
+  text-decoration: none;
+  border-radius:30px;
+  font-weight: bold;
+  transition: backkground-color 0.3s;
+}
+
+btn primary: hover{
+  background-color: #b91c1c;
+}
+
+
