@@ -28,4 +28,37 @@
   <option value="Transfer Bank">Transfer Bank </option>
   <option value="QRISH">QRISH </option>
   <option value="GoPay">GoPay </option>
+  <option value="OVO">OVO </option>
 
+<button type="submit" class="btn-primary"> Bayar Sekarang </button>
+  </form>
+
+  <div class="back-link">
+  <a href="pilihantiket.html"> <-- Kembali Pilih Tiket </a>
+  <a/div>
+</section>
+
+<script>
+
+document.getElementById("formPembayaran").addEventListener("submit",function(e) {
+  e.preventDefault();
+
+  // Ambil Data dari Input 
+  const nama = document.getElementById("nama").value;
+  const email = document.getElementById("email").value;
+  const jumlah = document.getElementById("jumlah").value;
+  const metode = document.getElementById("metode").value;
+
+  //Simpan ke localStorage
+  localStorage.setltem("nama",nama);
+  localStorage.setltem("email",email);
+  localStorage.setltem("jumlah",jumlah);
+  localStorage.setltem("metode",metode);
+
+  //Arahkan ke halaman konfirmasi
+  window.location.href = "konfirmasi.html";
+});
+</script>
+
+</body>
+</html>
