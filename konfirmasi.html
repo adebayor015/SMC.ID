@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konfirmasi Pembayaran</title>
+  <link rel="stylesheet" href="konfirmassi.css" />
+  <style>
+    /* Cetak hanya bagian konfirmasi */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .confirmation, .confirmation * {
+        visibility: visible;
+      }
+      .btn-print, .btn-primary {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="confirmation">
+    <h1>Terima Kasih!</h1>
+    <p>Pembayaranmu telah kami terima.</p>
+    <div class="details">
+      <p><strong>Nama:</strong> <span id="konf-nama"></span></p>
+      <p><strong>Email:</strong> <span id="konf-email"></span></p>
+      <p><strong>Jumlah Tiket:</strong> <span id="konf-jumlah"></span></p>
+      <p><strong>Metode Pembayaran:</strong> <span id="konf-metode"></span></p>
+    </div>
 
+    <button class="btn-print btn-primary" onclick="window.print()">Cetak Bukti</button>
+    <a href="beranda.html" class="btn-primary">Kembali ke Beranda</a>
+  </section>
